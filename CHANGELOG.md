@@ -33,3 +33,15 @@
 ## 0.0.9
 
 * Minor bug Fixes
+
+## 0.1.0
+
+* Change communication type between parent and bottom sheet from GlobalKey to ScrollableController
+
+## 0.1.0+1
+
+* Change ScrollableBottomSheetState to be private since there's no need to create GlobalKey anymore
+
+## 0.1.0+2
+
+* Fix error with no controller in ScrollableBottomSheet
