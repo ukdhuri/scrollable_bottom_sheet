@@ -273,8 +273,7 @@ class _ScrollableBottomSheetState extends State<ScrollableBottomSheet>
                 if (targetHeight != null) {
                   _animateTo(targetHeight, onComplete: () {
                     if ((targetHeight == 0.0 || targetHeight == _minimumHeight) && widget.autoPop) 
-                    {      
-                        print("1111fffffffffffffffffffffffffffffffffffffffff");        
+                    {
                         if(Navigator.of(context).canPop())      
                         Navigator.pop(context);
                     }
