@@ -272,12 +272,7 @@ class _ScrollableBottomSheetState extends State<ScrollableBottomSheet>
 
                 if (targetHeight != null) {
                   _animateTo(targetHeight, onComplete: () {
-                    if ((targetHeight == 0.0 || targetHeight == _minimumHeight) && widget.autoPop) 
-                    {
-                        if(Navigator.of(context).canPop())      
-                        Navigator.pop(context);
-                    }
-                    
+                    if ((targetHeight == 0.0 || targetHeight == _minimumHeight) && widget.autoPop) Navigator.pop(context);
                   });
                 }
 
@@ -389,12 +384,7 @@ class _ScrollableBottomSheetState extends State<ScrollableBottomSheet>
     if (widget.minimumHeight == null) return;
 
     _animateTo(_minimumHeight, onComplete: () {
-      if (willPop) 
-      {
-         print("222222fffffffffffffffffffffffffffffffffffffffff"); 
-         if(Navigator.of(context).canPop())
-         Navigator.pop(context);
-      }     
+      if (willPop) Navigator.pop(context);
     });
   }
 
@@ -405,12 +395,7 @@ class _ScrollableBottomSheetState extends State<ScrollableBottomSheet>
   @override
   void animateToZero(BuildContext context, {bool willPop = false}) {
     _animateTo(0.0, onComplete: () {
-      if (willPop) 
-      {
-        print("333333fffffffffffffffffffffffffffffffffffffffff");
-        if(Navigator.of(context).canPop())
-        Navigator.pop(context);
-      }       
+      if (willPop) Navigator.pop(context);
     });
   }
 
