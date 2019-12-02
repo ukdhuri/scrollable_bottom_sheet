@@ -15,7 +15,7 @@ Scrollable Persistent Bottom Sheet
   s.source_files = 'Classes/**/*'
   s.public_header_files = 'Classes/**/*.h'
   s.dependency 'Flutter'
-
+  s.swift_versions = ['4.0', '4.2', '5.0', '5.1.2']
   s.ios.deployment_target = '8.0'
 end
 
