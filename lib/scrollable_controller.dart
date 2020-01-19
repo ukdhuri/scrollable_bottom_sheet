@@ -77,12 +77,8 @@ class ScrollableController {
   /// you can call this method from Global Key
   ///
   /// See [example/main.dart] for example
- void animateToFull(BuildContext context,[String x]) {
-    if(x=="1")
-    {
-      if (_interface != null) _interface.animateToFull(context);
-    }   
-    
+ void animateToFull(BuildContext context) {
+      if (_interface != null) _interface.animateToFull(context);  
   }
 }
 //---
